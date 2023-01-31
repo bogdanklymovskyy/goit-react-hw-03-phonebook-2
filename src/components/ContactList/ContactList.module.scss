@@ -1,0 +1,32 @@
+.contactListContaoner {
+  overflow: hidden;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 0;
+  margin: 15px;
+  color: white;
+  max-height: 360px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(26, 24, 47, 0.15);
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1a182f4f;
+    border-radius: 5px;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
